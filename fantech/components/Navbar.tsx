@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <div className="w-full h-28 border-b border-gray-500 text-white bg-black">
-      <div className="max-w-screen-xl h-full mx-auto px-4 flex items-center">
+      <div className="max-w-screen-xl h-full mx-auto px-4 flex items-center justify-between">
         <h1 className="text-2xl md:text-3xl uppercase font-bold">FANTECH</h1>
         <div className="hidden md:flex items-center flex-grow justify-center">
           <ul className="flex items-center gap-8 uppercase text-sm font-bold">
@@ -19,12 +19,12 @@ function Navbar() {
             <li className="Navbarli">Software</li>
           </ul>
         </div>
-        <div className="hidden md:flex items-center ml-auto text-sm md:text-lg uppercase font-bold">
+        <div className="hidden md:flex items-center text-sm md:text-lg uppercase font-bold ml-8">
           Lainnya
         </div>
-        <div className="md:hidden flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <RxCross2 className="text-2xl" /> : <CiMenuBurger className="text-2xl" />}
+        <div className="md:hidden flex items-center ml-auto">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
+            {isOpen ? <RxCross2 /> : <CiMenuBurger />}
           </button>
         </div>
       </div>
