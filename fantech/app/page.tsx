@@ -4,10 +4,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <div>
-          <Navbar>
-            
-          </Navbar>
+      <div className="w-full h-96 bg-black">
+          <Navbar />
       </div>
     </main>
       );
