@@ -20,8 +20,9 @@ function Navbar() {
           </ul>
         </div>
         <div className="hidden md:flex items-center text-sm md:text-lg uppercase font-bold ml-8">
-          Lainnya
+          Contact Us
         </div>
+        
         <div className="md:hidden flex items-center ml-auto">
           <button onClick={() => setIsOpen(!isOpen)} className="text-2xl">
             {isOpen ? <RxCross2 /> : <CiMenuBurger />}
@@ -30,11 +31,11 @@ function Navbar() {
       </div>
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-black text-white`}>
         <ul className="flex flex-col items-center gap-4 py-4">
-          <li className="Navbarli">Home</li>
-          <li className="Navbarli">Gaming</li>
-          <li className="Navbarli">Smart Life</li>
-          <li className="Navbarli">Software</li>
-          <li className="Navbarli">Lainnya</li>
+          <li className="Navbarli2">Home</li>
+          <li className="Navbarli2">Gaming</li>
+          <li className="Navbarli2">Smart Life</li>
+          <li className="Navbarli2">Software</li>
+          <li className="Navbarli2">Lainnya</li>
         </ul>
       </div>
     </div>
