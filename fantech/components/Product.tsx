@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from 'react';
 import Image from 'next/image';
 import { FaStar } from 'react-icons/fa';
 
@@ -12,8 +15,10 @@ interface ProductCardProps {
 const Product: React.FC<ProductCardProps> = ({ imageUrl, name, price, rating, discount }) => {
   return (
     <div className="border rounded-lg shadow-lg p-4 max-w-sm">
-      <div className="relative">
-        <Image src={imageUrl} alt={name} width={400} height={300} className="rounded-t-lg" />
+      <div className="relative overflow-hidden">
+        <div className="transform transition-transform duration-300 hover:scale-110">
+          <Image src={imageUrl} alt={name} width={400} height={300} className="rounded-t-lg" />
+        </div>
         {discount && <span className="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">-{discount}</span>}
       </div>
       <div className="p-4">

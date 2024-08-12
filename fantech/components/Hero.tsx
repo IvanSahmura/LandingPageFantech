@@ -5,7 +5,7 @@ function Hero() {
           <div className="mb-8 md:mb-0 text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Your Best Gear</h1>
             <p className="text-lg md:text-xl text-white mb-2">Summer Sale Discounts</p>
-            <p className="text-2xl md:text-2xl font-bold text-white mb-4">GET 40% OFF!</p>
+            <p className="text-2xl md:text-2xl font-bold text-white mb-4">GET 40% OFF !</p>
           </div>
         </div>
       </div>
