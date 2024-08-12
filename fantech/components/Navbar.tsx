@@ -29,7 +29,7 @@ function Navbar() {
           </button>
         </div>
       </div>
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-black text-white`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} absolute w-full bg-black text-white z-50`}>
         <ul className="flex flex-col items-center gap-4 py-4">
           <li className="Navbarli2">Home</li>
           <li className="Navbarli2">Gaming</li>
