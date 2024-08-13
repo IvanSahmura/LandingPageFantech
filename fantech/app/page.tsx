@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Product from "@/components/Product";
@@ -7,8 +8,11 @@ export default function Home() {
   return (
     <main>
       <div>
+        <div className="bg-black">
         <Navbar />
         <Hero />
+      </div>
+
         <div className="px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <Product
@@ -69,6 +73,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <Footer />
       </div>
     </main>
   );

@@ -7,6 +7,13 @@
         @apply hover:text-red-600 cursor-pointer duration-300;
     }
 
+    .footerLi{
+        @apply hover:text-red-600 duration-300;
+
+    }
+    
+    
+
   
 
     
