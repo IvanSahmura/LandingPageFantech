@@ -1,3 +1,4 @@
+import HeroBott from "@/components/BannerBawah/HeroBott";
 import BannerProducts from "@/components/bannerProducts/BannerProducts";
 import Footer from "@/components/footer/Footer";
 import Hero from "@/components/Hero";
@@ -75,6 +76,7 @@ export default function Home() {
           </div>
         </div>
       <BannerProducts />
+       <HeroBott />
 
         <Footer />
       </div>
