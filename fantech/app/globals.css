@@ -24,7 +24,7 @@
       }
       
       .slide-left {
-        animation: slideLeft 0.5s ease-in;
+        animation: slideLeft 0.5s ease-in-out;
       }
       
     
