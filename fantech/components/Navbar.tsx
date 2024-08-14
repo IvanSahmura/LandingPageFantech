@@ -35,7 +35,7 @@ function Navbar() {
 
       timeoutId.current = setTimeout(() => {
         setIsHidden(false);
-      }, 300); // Delay before showing the navbar again
+      }, 100); // Delay before showing the navbar again
     };
 
     window.addEventListener('scroll', handleScrollStop);

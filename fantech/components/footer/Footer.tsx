@@ -11,7 +11,7 @@ function Footer() {
         {/* Store Location */}
         <FooterList>
           <h3 className="font-bold mb-4">FANTECH</h3>
-          <p className="mb-2"> Question? </p>
+          <p className="text-slate-600 "> Question? </p>
           <a className="block mb-4" href="https://api.whatsapp.com/send/?phone=%2B6281119094439&text=Hallo+saya+ingin+bertanya+&type=phone_number&app_absent=0" target="_">081119094439</a>
 
           <p className="mb-2"> Follow us!</p>
