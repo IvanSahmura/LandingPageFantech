@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
       </div>
         <div className="px-4 py-8">
-          <h1 className="text-4xl md:text-3xl  font-bold ">Best Deals</h1>
+          <h1 className="text-4xl md:text-3xl font-bold mb-8 text-center">Best Deals</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <Product
               imageUrl="/assets/1.png"
@@ -75,10 +75,12 @@ export default function Home() {
             />
           </div>
         </div>
-      <BannerProducts />
+       <BannerProducts />
       
-       <HeroBott />
-
+        <div className="px-4 py-8">
+          <h1 className="text-4xl md:text-3xl font-bold text-center mb-8">Articles</h1>
+          <HeroBott />
+        </div>
         <Footer />
       </div>
       

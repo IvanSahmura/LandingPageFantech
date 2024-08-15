@@ -14,13 +14,11 @@ function Navbar() {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       if (scrollTop > lastScrollTop.current) {
-        // Scrolling down
         setIsHidden(true);
       } else {
-        // Scrolling up
         setIsHidden(false);
       }
-      lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+      lastScrollTop.current = scrollTop <= 0 ? 0 : scrollTop; 
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -35,7 +33,7 @@ function Navbar() {
 
       timeoutId.current = setTimeout(() => {
         setIsHidden(false);
-      }, 100); // Delay before showing the navbar again
+      }, 100); 
     };
 
     window.addEventListener('scroll', handleScrollStop);
@@ -76,9 +74,7 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Ensure that the content starts below the navbar */}
-      <div style={{ paddingTop: '7rem' }}> {/* Adjust this padding value based on the height of your navbar */}
-        {/* Main content goes here */}
+      <div style={{ paddingTop: '7rem' }}>
       </div>
     </>
   );
